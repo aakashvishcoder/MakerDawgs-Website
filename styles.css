@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
