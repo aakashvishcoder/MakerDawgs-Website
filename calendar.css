@@ -1,13 +1,13 @@
 :root {
-    --primary: #4a6bdf;
-    --secondary: #6c5ce7;
-    --accent: #00cec9;
-    --light: #f8f9fa;
-    --dark: #2d3436;
-    --text: #636e72;
-    --today: #fd79a8;
-    --selected: #a29bfe;
-    --event-panel-bg: #f8f9fa;
+    --primary: orange;
+    --secondary: #ff9f1a;
+    --accent: #ffa502;
+    --light: #222;
+    --dark: #000;
+    --text: #ccc;
+    --today: #e17055;
+    --selected: #3742fa;
+    --event-panel-bg: #111;
 }
 
 * {
@@ -22,7 +22,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #dfe6e9 100%);
+    background: #000;
+    color: #fff;
     padding: 20px;
 }
 
@@ -32,6 +33,7 @@ body {
     gap: 20px;
     max-width: 900px;
     width: 100%;
+    padding: 0 5%;
 }
 
 @media (min-width: 768px) {
@@ -42,11 +44,12 @@ body {
 }
 
 .calendar-container {
-    background:white;
+    background: #111;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(255,165,0,0.15);
     width: 100%;
     max-width: 400px;
+    color: var(--text);
     overflow:hidden;
     transform-style:preserve-3d;
     perspective: 1000px;
@@ -55,7 +58,7 @@ body {
 
 .calendar-container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(255,165,0,0.15);
 }
 
 .calendar-header {
@@ -64,7 +67,7 @@ body {
 
 .calendar-container:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(255,165,0,0.15);
 }
 
 .calendar-header {
@@ -157,7 +160,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     font-weight: 500;
-    color: var(--dark);
+    color: #fff;
 }
 
 .day:hover {
@@ -227,10 +230,11 @@ body {
 }
 
 .event-panel {
-    background: white;
+    background: #111;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     padding: 1.5rem;
+    color: var(--text);
     width: 100%;
     max-width: 450px;
     height: fit-content;
@@ -259,7 +263,7 @@ body {
 .event-item {
     padding: 1rem;
     margin-bottom: 0.8rem;
-    background: var(--event-panel-bg);
+    background: #1a1a1a;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -282,7 +286,7 @@ body {
 
 .event-time {
     font-weight: 600;
-    color: var(--primary);
+    color: var(--secondary);
     min-width: 80px;
 }
 
